@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-tinder-autoliker",
+  "version": "1.0.0",
+  "description": "A Node.JS autoliker for tinder! Now you can easily find your soulmate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorgutierre/nodejs-tinder-autoliker.git"
+  },
+  "author": "Victor Gutierre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victorgutierre/nodejs-tinder-autoliker/issues"
+  },
+  "homepage": "https://github.com/victorgutierre/nodejs-tinder-autoliker#readme",
+  "dependencies": {
+    "tinder_pro": "^1.0.4"
+  }
+}
