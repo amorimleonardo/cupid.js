@@ -14,7 +14,7 @@ Run `npm install` to install the dependencies
 
 Edit the `secrets.js` file and put your facebook profile id and your access token
 
-```
+```javascript
 let secrets = {
   facebook_id : 'YOUR FACEBOOK ID',
   facebook_token : 'FACEBOOK TOKEN'
