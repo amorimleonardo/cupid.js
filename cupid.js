@@ -1,7 +1,8 @@
 'use strict';
 
 let TinderPro = require('tinder_pro');
-let secrets   = require('./secrets');
+let secrets   = require('./assets/secrets');
+let messages  = require('./assets/messages');
 let tinder    = new TinderPro();
 
 let fbId    = secrets.facebook_id,
@@ -21,7 +22,7 @@ tinder.sign_in(fbId, fbToken, function (err, res, body) {
       getUsers(tinder);
     });
 
-  } else {
+  } else {  
     console.log('An error occured', body.message);
   }
 });
@@ -41,8 +42,21 @@ function autoLiker(results) {
       if(res.statusCode === 200) {
         liked++;
         console.log('Liked ' + result.name + '(' + liked + '), it was ' + (body.match ? '' : 'not') + ' a match');
+        if(body.match) {
+          sendMessage(result._id);
+        }
       }
     })
+  });
+}
+
+function sendMessage(user_id) {
+  let randomMessage = messages[Math.floor(Math.random() * messages.length)];
+
+  tinder.send_message(user_id, randomMessage, function(err, res, body) {
+    console.log('Message Sent!\n');
+    console.log(body);
+    console.log('\n');
   });
 }
 
