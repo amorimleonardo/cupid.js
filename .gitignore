@@ -7,3 +7,5 @@ dist
 # Logs
 logs
 *.log
+
+assets/secrets.js

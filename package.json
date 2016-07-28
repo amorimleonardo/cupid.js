@@ -4,6 +4,8 @@
   "description": "A Node.JS autoliker for tinder! Now you can easily find your soulmate",
   "main": "index.js",
   "scripts": {
+    "prestart": "npm install",
+    "start": "node cupid.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

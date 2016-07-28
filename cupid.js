@@ -22,7 +22,7 @@ tinder.sign_in(fbId, fbToken, function (err, res, body) {
       getUsers(tinder);
     });
 
-  } else {  
+  } else {
     console.log('An error occured', body.message);
   }
 });
@@ -40,9 +40,11 @@ function autoLiker(results) {
   results.forEach(function (result) {
     tinder.like(result._id, function(err, res, body) {
       if(res.statusCode === 200) {
+        let match = body ? body.match : false;
         liked++;
-        console.log('Liked ' + result.name + '(' + liked + '), it was ' + (body.match ? '' : 'not') + ' a match');
-        if(body.match) {
+
+        console.log('Liked ' + result.name + '(' + liked + '), it was ' + (match ? '' : 'not') + ' a match');
+        if(match) {
           sendMessage(result._id);
         }
       }
