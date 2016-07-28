@@ -10,7 +10,6 @@ Download via `git`
 git clone git@github.com:victorgutierre/cupid.js.git
 ```
 
-
 Edit the `secrets.js` file in `assets` and put your facebook profile id and your access token
 
 ```javascript
