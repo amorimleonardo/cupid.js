@@ -1,6 +1,6 @@
 # Cupid.JS
 
-Cupid.js is a NodeJS bot for Tinder which automatically swipe right (like) people until you find your soulmate :heart:
+Cupid.js is a NodeJS bot for Tinder which automatically swipe right (like) people and send message to your matches until you find your soulmate :heart:
 
 ## How to use?
 
