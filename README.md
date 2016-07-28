@@ -10,7 +10,6 @@ Download via `git`
 git clone git@github.com:victorgutierre/cupid.js.git
 ```
 
-Run `npm install` to install the dependencies
 
 Edit the `secrets.js` file and put your facebook profile id and your access token
 
@@ -25,6 +24,6 @@ The easiest way to get your facebook token is to go [here](https://www.facebook.
 
 If you have a facebook username instead of id, you can find your id using this [website](http://findmyfbid.com/).
 
-Then, close `secrets.js` file and run `node cupid.js` and you'll swipe everyone 25 miles around you :smiley: 
+Then, close `secrets.js` file and run `npm start` and you'll swipe everyone 25 miles around you :smiley: 
 
 
